@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Outfit Recommendation</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+  <h1>👕 Outfit Recommendation</h1>
+
+  <form method="POST">
+    <label>Weather:</label>
+    <select name="weather">
+      <option>Hot</option>
+      <option>Cold</option>
+      <option>Rainy</option>
+    </select>
+
+    <label>Occasion:</label>
+    <select name="occasion">
+      <option>Casual</option>
+      <option>Formal</option>
+      <option>Party</option>
+    </select>
+
+    <button>Get Outfit</button>
+  </form>
+
+  <br>
+  <a href="/history">📜 View History</a>
+</div>
+
+</body>
+</html>
