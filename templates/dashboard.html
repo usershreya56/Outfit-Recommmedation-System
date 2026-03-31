@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1> Outfit Dashboard</h1>
+
+<form method="POST">
+    <select name="weather">
+        <option>hot</option>
+        <option>cold</option>
+        <option>rainy</option>
+    </select>
+    <button>Suggest Outfit</button>
+</form>
+
+<h2>{{ outfit }}</h2>
+
+<form action="/favorite" method="POST">
+    <input type="hidden" name="outfit" value="{{ outfit }}">
+    <button> Save</button>
+</form>
+
+<a href="/wardrobe"> My Wardrobe</a>
+<a href="/logout"> Logout</a>
+
+</body>
+</html>
